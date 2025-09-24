@@ -1,0 +1,74 @@
+Vị trí: Lớp phủ là lớp có độ nhớt cao nhất nằm phía dưới lớp vỏ và phía trên lõi ngoài
+Phân lớp: 
+    1.Theo rheology (Cơ học lưu biến): 
+        -Lithospheric Mantle (Thạch quyển lớp phủ):
+            +Tầng cứng, rắn chắc, không dòng chảy nhanh.
+            +Kết hợp với vỏ Trái Đất tạo thành thạch quyển (tectonic plates) 
+            +Độ dày:
+                - ~100 km dưới đại dương
+                -~150–200 km dưới lục địa
+        -Asthenosphere (Tầng mềm dẻo): 
+            +Nằm ngay bên dưới lithospheric mantle, từ khoảng 80–200 km đến ~700 km, thường lấy khoảng 100–410 km trong phân loại chuẩn
+            +Dẻo, yếu cơ học, có thể chảy rất chậm (ductile flow)
+
+    2.Theo thay đổi vận tốc sóng địa chấn (seismic velocity):
+        -Lớp phủ trên (Upper Mantle): Giới hạn độ sâu: Từ Moho hoặc đáy vỏ khoáng (~7–35 km) đến khoảng 410 km.
+        -Vùng chuyển tiếp (Transition Zone): độ sâu khoảng 410–660 km 
+            ->Lưu ý: trong đó trong đó độ sâu của Wadsleyite (khoảng 410–520 	km) và ringwoodit (khoảng 525–660 km) 
+        -Lớp phủ dưới (Lower Mantle): độ sâu khoảng 660–2.891 km
+            ->Lưu ý: trong đó độ sâu của Bridgmanite (≈ 660–2.685 km) và post-	perovskite (khoảng 2,685–2,891 km)
+    3. Vùng D: Phía dưới ~200 km của lớp phủ dưới tạo thành vùng D" (D-double-prime), một vùng có tính chất địa chấn bất thường. Khu vực này cũng bao gồm large low-shear-velocity provinces và ultra low velocity zones.
+
+III.Trạng thái của lớp phủ Trái Đất (Earth's mantle) : là rắn, nhưng có thể chảy từ từ theo thời gian dài dưới tác động của nhiệt độ và áp suất cao – đây là điểm quan trọng trong sự dịch chuyển của các mảng kiến tạo.
+
+IV.Nhiệt độ: 
+    1. Ranh giới trên (gần lớp vỏ: có nhiệt độ khoảng từ 500–900 °C (932–1,652 °F)
+    2. Ranh giới dưới (giáp lõi ngoài): có nhiệt độ khoảng trên 4,000 °C (7,230 °F)
+
+V.Thành phần hóa học: Thành phần hóa học của lớp phủ rất khó xác định với mức độ chắc chắn cao vì phần lớn nó không thể tiếp cận được. Đá lớp phủ có thể có thể tiếp cận được trong một số trường hợp hiếm hoi
+    -Thành phần của lớp phủ trên: thông qua Phun trào núi lửa, Phun trào núi lửa, Drilling (khoan sâu)…
+       
+            Hợp chất, Phần trăm khối lượng
+            SiO2, 44.71  
+            MgO, 38.73  
+            FeO, 8.18  
+            Al2O3, 3.98  
+            CaO, 3.17  
+            Cr2O3, 0.57  
+            NiO, 0.24  
+            MnO, 0.13  
+            Na2O, 0.13  
+            TiO2, 0.13  
+            P2O5, 0.019  
+            K2O, 0.006
+
+    -Thành phần của lớp phủ dưới: giả định vì nằm quá sâu chỉ có thể suy đoán từ tốc độ sống địa chấn, mô phổng trong phòng thí nghiệm, thành phần thiên thạch chondrit nguyên thủy…
+
+VI.Độ dày: Tổng độ dày: khoảng 2.900 km (tính từ ranh giới lớp vỏ [Moho] đến ranh giới ngoài lõi Trái Đất)
+        ->Giải thích: Lớp phủ trên(khoảng 375 km) + Vùng chuyển tiếp(khoảng 250 km) + Lớp phủ dưới(khoảng 2.230 km) ≈ 2.900 km
+
+VII.Vai trò:
+    1.Truyền nhiệt và điều khiển chuyển động mảng
+    2.Nguồn gốc của magma và núi lửa
+    3.Cung cấp vật chất cấu tạo vỏ Trái Đất
+    4.Duy trì hoạt động địa chất của Trái Đất
+
+VIII.Đặc điểm nội bật của phủ trên:
+    1.Độ sâu khoảng 10-670 km
+    2.Nhiệt độ: khoảng 627 - 930°C
+    3.Áp suất Lên đến khoảng 24 GPa (237.000 atm)
+    4.Khoáng vật chính: Peridotite (olivine ~55%, pyroxene ~35%, oxide ~5-10%)
+    5.Tính chất: Rắn nhưng dẻo, nhớt cao (10¹⁹–10²⁴ Pa·s)
+    6.Vai trò: Đối lưu tạo động lực cho kiến tạo mảng và hoạt động địa chất
+
+IX.Đặc điểm nổi bật của phủ dưới:
+    1)Độ sâu khoảng 660 - 2890 km
+    2)Chiếm khoảng 56% thể tích trái đất
+    3)Nhiệt độ khoảng 1.690 - 2.360 °C
+    4)Áp suất khoảng 24-217Gpa
+    5)Khoáng vật chính: Bridgmanite (~75%), Ferropericlase (~17%), Calcium-perovskite (~8%) (suy đoán từ thí nghiệm)
+    6)Trạng thái và chuyển động: Rắn, độ nhớt cao, đối lưu hoặc bất động tùy vùng
+    7)Ranh giới phân chia: 660 km phía trên vùng D (khoảng 2.700–2.890 km) xuống dưới
+    8)Khó tiếp cận để  phân tích vì  nằm quá sâu
+
+    Nguồn: https://en.wikipedia.org/wiki/Earth%27s_mantle

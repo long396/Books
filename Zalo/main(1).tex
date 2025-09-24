@@ -1,0 +1,159 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage[vietnamese]{babel}
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\lstset{
+    language=Matlab,          % Set language to MATLAB
+    frame=single,             % Add a border around the code
+    basicstyle=\ttfamily,     % Use a typewriter font
+    keywordstyle=\color{blue},% Color MATLAB keywords
+    commentstyle=\color{green}, % Color comments
+    stringstyle=\color{red},  % Color strings
+    numbers=left,             % Show line numbers on the left
+    numberstyle=\tiny,        % Line number font size
+    stepnumber=1,             % Show every line number
+    breaklines=true,          % Automatically break long lines
+    captionpos=b,             % Position of captions (bottom)
+}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{BT tuan 7}
+\author{Nguyễn Tấn Tài - 23110205}
+\date{9th April 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\parbox{17cm}{
+    \fbox{
+        \parbox{17cm}{
+            Tính xấp xỉ nghiệm hệ      
+            $$y''(x_1) + p(x_i)y'(x_1) + q(x_i)y(x_1) = r(x_1)$$
+            $$y(x_0) = \alpha; y'(x_N) = \beta$$
+        }
+    } 
+    \fbox{
+        \parbox{17cm}{
+            Ta chỉ làm cách này được nếu $N \geq 5$
+        }
+    }
+    \fbox{
+        \parbox{17cm}{
+            Với $i=1$:\\
+            \[y''(x_1) + p(x_i)y'(x_1) + q(x_i)y(x_1) = r(x_1)\]
+            $$
+            \frac{y(x_2) - 2y(x_1) + y(x_0)}{h^2}
+            + p(x)\frac{y(x_2) - y(x_0)}{2h}
+            + q(x)y(x_i) = r(x_i) + \mathcal{O}(h^2)
+            $$
+            $$
+              y(x_0)\left[\frac{1}{h^2} - \frac{p(x_1)}{2h}\right]
+            + y(x_1)\left[\frac{-2}{h^2} + q(x_1)\right]
+            + y(x_2)\left[\frac{1}{h^2} + \frac{p(x_1)}{2h}\right]
+            = r(x_1) + \mathcal{O}(h^2)
+            $$
+            $$
+              y(x_1)\left[\frac{-2}{h^2} + q(x_1)\right]
+            + y(x_2)\left[\frac{1}{h^2} + \frac{p(x_1)}{2h}\right]
+            = r(x_1) - y(x_0)\left[\frac{1}{h^2} - \frac{p(x_1)}{2h}\right] + \mathcal{O}(h^2)
+            $$
+            $$
+              y(x_1)\left[\frac{-2}{h^2} + q(x_1)\right]
+            + y(x_2)\left[\frac{1}{h^2} + \frac{p(x_1)}{2h}\right]
+            = r(x_1) - \alpha\left[\frac{1}{h^2} - \frac{p(x_1)}{2h}\right] + \mathcal{O}(h^2)
+            $$
+        }
+    }\\
+    \fbox{
+        \parbox{17cm}{
+            Với $2 \leq i \leq N-2$:\\
+            $$y''(x_i) + p(x_i)y'(x_i) + q(x_i)y(x_i) = r(x_i)$$\\
+            $$
+            \frac{y(x_{i+1}) - 2y(x_i) + y(x_{i-1})}{h^2}
+            + p(x)\frac{y(x_{i+1}) - y(x_{i-1})}{2h}
+            + q(x)y(x_i) = r(x_i) + \mathcal{O}(h^2)
+            $$
+            $$
+              y(x_{i-1})\left[\frac{1}{h^2} - \frac{p(x_i)}{2h}\right]
+            + y(x_{i})\left[\frac{-2}{h^2} + q(x_i)\right]
+            + y(x_{i+1})\left[\frac{1}{h^2} + \frac{p(x_i)}{2h}\right]
+            = r(x_i) + \mathcal{O}(h^2)
+            $$
+            
+        }
+    }
+    \fbox{
+        \parbox{17cm}{
+        \tiny
+            Với $i = N-1$:\\
+            $$
+            y''(x_{N-1}) + p(x_{N-1})y'(x_{N-1}) + q(x_{N-1})y(x_{N-1}) = r(x_{N-1})
+            $$
+            $$
+            \frac{y'(x_{N}) - y'(x_{N-2})}{2h}
+            + p(x_{N-1})\frac{3y(x_{N-1})-4y(x_{N-2})+y(x_{N-3})}{2h}
+            + q(x_{N-1})y(x_i) = r(x_i) + \mathcal{O}(h^2)
+            $$
+            \[
+            \frac{y'(x_{N}) - \frac{11y(x_{N-2})-18y(x_{N-3})+9y(x_{N-4})-2y(x_{N-5})}{h}}{2h}
+            + p(x_{N-1})\frac{3y(x_{N-1})-4y(x_{N-2})+y(x_{N-3})}{2h}\\
+            + q(x_{N-1})y(x_{N-1}) = r(x_{N-1}) + \mathcal{O}(h^2)
+            \]
+            \[
+            \frac{\beta}{2h}- \frac{11y(x_{N-2})-18y(x_{N-3})+9y(x_{N-4})-2y(x_{N-5})}{2h^2}
+            + p(x_{N-1})\frac{3y(x_{N-1})-4y(x_{N-2})+y(x_{N-3})}{2h}\\
+            + q(x_{N-1})y(x_{N-1}) = r(x_{N-1}) + \mathcal{O}(h^2)
+            \]
+            \[
+              y(x_{N-5})\left[\frac{1}{h^2}\right]
+            + y(x_{N-4})\left[\frac{-9}{2h^2}\right]
+            + y(x_{N-3})\left[\frac{9}{h^2}+\frac{p(x_{N-1})}{2h}\right]
+            + y(x_{N-2})\left[\frac{11}{2h^2}-\frac{4p(x_{N-1})}{2h}\right]
+            + y(x_{N-1})\left[q(x_{N-1})+\frac{3p(x_{N-1})}{2h}\right]
+            = r(x_{N-1}) - \frac{\beta}{2h} + \mathcal{O}(h^2)
+            \]
+        }
+    }
+}
+\newpage
+
+\fbox{
+    \parbox{7cm}{
+        $$A_{11} = \frac{-2}{h^2} + q(x_1)$$
+        $$A_{12} = \frac{1}{h^2}+\frac{p(x_1)}{2h}$$
+        $$A_{i-1,i} = \frac{1}{h^2}-\frac{p(x_i)}{2h}$$
+        $$A_{i,i} = \frac{-2}{h^2} + q(x_i)$$
+        $$A_{i+1,i} = \frac{1}{h^2}+\frac{p(x_i)}{2h}$$
+        $$A_{N-5,N-1} =
+            \begin{cases}
+                0 \text{ nếu } N = 5\\
+                \frac{1}{h^2} \text{ nếu }N \geq 5\\
+            \end{cases}
+        $$
+        $$A_{N-4,N-1} = \frac{-9}{2h^2}$$
+        $$A_{N-3,N-1} = \frac{9}{h^2}+\frac{p(x_{N-1})}{2h}$$
+        $$A_{N-2,N-1} = \frac{11}{2h^2}-\frac{4p(x_{N-1})}{2h}$$
+        $$A_{N-1,N-1} = q(x_{N-1})+\frac{3p(x_{N-1})}{2h}$$
+    }
+    \parbox{7cm}{
+        $$B_1=r(x_1) - \alpha\left[\frac{1}{h^2} - \frac{p(x_1)}{2h}\right]$$
+        $$B_i = r(x_{i})$$
+        $$B_{N-1} =
+            \begin{cases}
+                r(x_{N-1}) - \frac{\beta}{2h} -  \frac{\alpha}{h^2}\text{ nếu } N = 5\\
+                r(x_{N-1}) - \frac{\beta}{2h} \text{ nếu }N \geq 5\\
+            \end{cases}
+        $$
+    }
+}
+
+\end{document}
